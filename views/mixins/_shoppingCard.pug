@@ -1,0 +1,13 @@
+mixin shoppingCard(shoppingCart = {})
+    .shoppingCart
+        .card-body 
+            
+            h5.card-title
+                h5 #{shoppingCart.name} 
+            p.card-text= 'Price: ' + shoppingCart.price + ' eur'
+            p.card-text= 'Quantity: ' + shoppingCart.quantity
+            p.card-text= 'Subtotal: ' + (shoppingCart.price * shoppingCart.quantity) + ' eur'
+            
+            form(action=`/remove_from_cart` method="POST")
+                input(type="hidden" name="productId" value=shoppingCart.productId)
+                button(type="submit" class="remove-button") Remove product 

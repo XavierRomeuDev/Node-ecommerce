@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container
+        .mb-3.card
+            img.card-imgtop(src=`/uploads/${product.photo || 'product.png'}`)
+            .card-body
+                h5.fs-0 #{product.name}
+                p.mb-0= product.address
+
+ 
+        .no-gutters.row
+            .pr-lg-2.col-lg-6
+                .card
+                    .card-body
+                        p=product.description

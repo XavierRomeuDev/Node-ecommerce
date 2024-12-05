@@ -1,0 +1,11 @@
+extends layout
+
+include mixins/_orderCard
+include mixins/_shoppingCard
+
+block content
+    .container
+        h2= title
+        .orders
+            each order in orders
+                +orderCard(order)

@@ -1,0 +1,7 @@
+mixin orderCard(order = {})
+    .order
+        .card-body 
+            h5.card-title 
+                h5 #{order.createdAt}
+            p.card-text= 'Total: ' + order.bill
+            p.card-text= 'Quantity of products: ' + order.totalQuantity

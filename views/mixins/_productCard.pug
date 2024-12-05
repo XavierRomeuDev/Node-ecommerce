@@ -1,0 +1,11 @@
+mixin productCard(product = {})
+    .product            
+        img.card-img-top.imgfluid(src=`/uploads/${product.photo || 'product.png'}`)
+        .card-body
+            h5.card-title
+                h5 #{product.name}
+            p.card-text= "Price:" + product.price
+        form(action=`/add_to_cart` method="POST")
+            input(type="hidden" name="productId" value=product._id)
+            input(type="hidden" name="quantity" value=1)
+            button(type="submit" class="btn btn-primary") Add to cart

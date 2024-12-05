@@ -1,0 +1,18 @@
+extends layout
+
+include mixins/_productCard
+include mixins/_pagination
+
+block content
+    .container
+        h2= title
+        .totalQuantity
+            if totalQuantity > 0
+                a(href="/shoppingCart")
+                    button(type="button" class="cart-button") Cart(#{totalQuantity})
+            p 
+            | 
+        .products
+            each product in products
+                +productCard(product)
+        +pagination(page, pages, count)
