@@ -4,8 +4,8 @@ const Product = mongoose.model('Product');
 const Order = mongoose.model('Order');
 const User = mongoose.model('User');
 
-const CLIENT_ID = 'AWUeC7BsLlxbmh2d3yoG4w-4Mit6VXoy35iIyrsenkrvz0cwB_6oANBX__N3U-3wXDUMLuAj2L6YAjRU';
-const APP_SECRET = 'EIXXh2NLGWrUrIUPOnnKSopTkVA79Jp1ZtJG88qjr05_Ry-X37FESycCIHKIEkpoFwgzpNQK3edwWEkC';
+const CLIENT_ID = 'CLIENT_ID';
+const APP_SECRET = 'APP_SECRET';
 const base = "https://api-m.sandbox.paypal.com";
 
 //cuenta sandbox para crear pedidos de prova
