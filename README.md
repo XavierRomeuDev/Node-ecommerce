@@ -27,22 +27,22 @@ This project is a backend REST API for a simple e-commerce platform built with *
    
 2. Navigate into the project directory:
 
-  cd Node-ecommerce
+   cd Node-ecommerce
 
 3. Install the dependencies:
 
-  npm install
+   npm install
 
 4. Create a .env file in the root directory with the following content:
 
-  PORT=5000
-  MONGO_URI=your_mongodb_connection_string
-  JWT_SECRET=your_secret_key
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key
   
 5. Running the Server
 
-  npm start
-  The API will be running at http://localhost:5000.
+   npm start
+   The API will be running at http://localhost:5000.
 
 ## 🛠️ Features
   - User registration and authentication with JWT.
