@@ -44,14 +44,14 @@ This project is a backend REST API for a simple e-commerce platform built with *
   npm start
   The API will be running at http://localhost:5000.
 
-##🛠️ Features
+## 🛠️ Features
   - User registration and authentication with JWT.
   - Product CRUD operations.
   - Order creation and retrieval.
   - Secure routes using middleware.
   - MongoDB database integration with Mongoose.
 
-##📬 API Endpoints (examples)
+## 📬 API Endpoints (examples)
   - POST /api/users/register – Register new user
   - POST /api/users/login – Login
   - GET /api/products – Get all products
